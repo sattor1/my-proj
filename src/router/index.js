@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '../main/'
+import Main from '../main'
 
 Vue.use(Router)
 
@@ -14,19 +14,19 @@ export default new Router({
     {
       path: '/subject',
       name: 'Subject',
-      component: () => import('../main/Subject/index.vue'),
+      component: () => import('../main/Subject/indexSubject.vue'),
       meta: { Main: false }
     },
     {
       path: '/beauty',
       name: 'Beauty',
-      component: () => import('../main/Beauty/index.vue'),
+      component: () => import('../main/Beauty/indexBeauty.vue'),
       meta: { Main: false }
     },
     {
       path: '/own',
       name: 'Own',
-      component: () => import('../main/Own/index.vue'),
+      component: () => import('../main/Own/indexOwn.vue'),
       meta: { Main: false }
     },
 

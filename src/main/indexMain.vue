@@ -41,7 +41,7 @@
   </div>
 </template>
 <script>
-import Header from "./Header/index.vue";
+import Header from './Header/indexHeader.vue'
 
 export default {
   data: () => ({
@@ -51,16 +51,16 @@ export default {
 
   methods: {
     goToSubject() {
-      this.$router.push({ path: "/subject" });
+      this.$router.push({ path: '/subject' })
     },
     goToBeauty() {
-      this.$router.push({ path: "/beauty" });
+      this.$router.push({ path: '/beauty' })
     },
     goToOwn() {
-      this.$router.push({ path: "/own" });
+      this.$router.push({ path: '/own' })
     }
   }
-};
+}
 </script>
 
 <style>
@@ -69,13 +69,13 @@ export default {
 }
 
 @font-face {
-  font-family: "Futura PT";
-  src: url(../assets/fonts/FuturaPT-Book.woff) format("woff");
+  font-family: 'Futura PT';
+  src: url(../assets/fonts/FuturaPT-Book.woff) format('woff');
 }
 
 .name-author {
   padding-bottom: 75px;
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   padding-top: 55px;
   text-align: center;
   font-weight: 400;
@@ -122,7 +122,7 @@ p {
   position: relative;
   bottom: 275px;
   text-align: center;
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   font-weight: 600;
 }
 </style>
